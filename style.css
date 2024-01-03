@@ -1,0 +1,117 @@
+:root{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins';
+    
+}
+
+body{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient( to bottom, rgba(8, 3, 26, 0.85), #09000a),url(image/modella.png);
+    
+    
+}
+.group{
+    position: relative;
+    top: 12rem;
+    
+    
+}
+
+.top-text{
+    text-align: center;
+    padding: 0 1rem;   
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: white;
+}
+
+.top-text h1{
+    position: relative;
+    animation-duration: 0.2s;
+    animation-name: top;
+}
+
+@keyframes top {
+    0%{
+        font-size: 10rem;
+        transform: skewY(45deg);
+    }
+    100%{
+        top: 0rem;
+        
+    }
+}
+.top-text h3{
+    position: relative;
+    bottom: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+.btn-space{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 0.7rem;
+    animation-duration: 2s;
+    animation-name: up;
+}
+
+.btn-space button{
+    background-color: #6841da;
+    width: 21rem;
+    height: 3.5rem;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 400;
+    transition: all 0.2s ease;
+    font-family: 'Poppins';
+    
+}
+
+@keyframes up {
+    0%{
+        top: 10rem;
+    }
+    100%{
+        top: -.6rem
+    }
+}
+
+
+.btn-space button:active{
+    background-color: #361c81;
+    transform: scale(0.96);
+}
+
+.acc-link{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    animation-duration: 2.8s;
+    animation-name: link;
+}
+
+@keyframes link{
+    0%{
+        top: 10rem;
+    }
+    100%{
+        top: 0rem
+    }
+}
+
+.acc-link h3{
+    font-weight: 450;
+    position: relative;
+    font-size: 1rem;
+    bottom: 0.8rem;
+
+}
