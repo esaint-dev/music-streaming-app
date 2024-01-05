@@ -10,7 +10,7 @@
 body{
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: linear-gradient( to bottom, rgba(8, 3, 26, 0.85), #09000a),url(image/modella.png);
+    background-image: linear-gradient( to bottom, rgba(8, 3, 26, 0.85), #000000),url(image/modella.png);
     
     
 }
@@ -32,14 +32,14 @@ h1,h2,h3,h4,h5,h6{
 
 .top-text h1{
     position: relative;
-    animation-duration: 0.2s;
+    animation-duration: 0.5s;
     animation-name: top;
 }
 
 @keyframes top {
     0%{
         font-size: 10rem;
-        transform: skewY(45deg);
+        
     }
     100%{
         top: 0rem;
@@ -58,7 +58,7 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     justify-content: center;
     bottom: 0.7rem;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: up;
 }
 
@@ -95,7 +95,7 @@ h1,h2,h3,h4,h5,h6{
     position: relative;
     display: flex;
     justify-content: center;
-    animation-duration: 2.8s;
+    animation-duration: 1s;
     animation-name: link;
 }
 
@@ -113,5 +113,198 @@ h1,h2,h3,h4,h5,h6{
     position: relative;
     font-size: 1rem;
     bottom: 0.8rem;
+}
 
+.acc-link a{
+    text-decoration: none;
+}
+.form-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    width: 100%;
+    z-index: 1;
+    height: 50rem;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    animation-duration: 1s;
+    animation-name: signup;
+    display: none;
+}
+
+.form-page .close{
+    position: absolute;
+    background-color: #6841da;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 1rem;
+    left: 90%;
+    width: 1rem;
+    margin-top: 1rem;
+    border-radius: 50%;
+    animation-duration: 3s;
+    animation-name: close;
+}
+
+@keyframes close{
+    0%{
+        bottom: 1rem;
+    }
+    100%{
+        bottom: 48rem
+    }
+}
+
+.close h2{
+    color: white;
+}
+@keyframes signup{
+    0%{
+        top: 45rem;
+    }
+    100%{
+        bottom: 35rem
+    }
+}
+.form-text{
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    text-align: center;
+}
+
+.form-text h4{
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.form-page input{
+    width: 20rem;
+    height: 3rem;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    margin: 0.5rem 0;
+    border-radius: 12px;
+    padding-left: 0.8rem;
+    outline: none;
+    background-color: #000000;
+    border: 1px solid white;
+    color: white;
+}
+
+.form-page input::placeholder{
+    color: #fff;
+}
+
+.form-btn{
+    background-color: #6841da;
+    width: 21rem;
+    height: 3.5rem;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.1rem;
+    margin: 0.8rem;
+    color: white;
+    font-weight: 400;
+    transition: all 0.2s ease;
+    font-family: 'Poppins';
+}
+
+.form-page .web{
+    display: flex;
+}
+
+
+.web{
+    position: absolute;
+    justify-content: center;
+    margin-top: 0rem;
+    padding-left: 0.5rem;
+    
+}
+.web .google-btn, .facebook-btn{
+    background-color: #ffffff;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.1rem;
+    margin: 3rem 0.7rem;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    transition: all 0.2s ease;
+    font-family: 'Poppins';
+}
+
+.web h4{
+    font-weight: 400;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.log{
+    display: none;
+}
+
+.social{
+    margin-top: 2rem;
+}
+
+.social h5{
+    font-weight: 400;
+    width: 100%;
+    z-index: 1;
+    font-size: 1rem;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.social h4{
+    font-weight: 400;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+
+.footer{
+    font-weight: 400;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    top: 12rem;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.social-btn{
+    position: relative;
+    margin-top: 2rem;
 }
